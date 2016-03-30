@@ -7,8 +7,30 @@ var TLV = require('../lib/TLV');
 
 exports.tlv = {
 
+    'exmaple' : function() {
+
+        var response = '6F3A8407A0000000041010A52F500A4D6173746572436172649F38069F5C089F4005BF0C179F5E095413339000001513019F5D030101009F4D020B0A';
+        var tlv = TLV.parse(response);
+
+        var tag6F = tlv.getTag();
+        assert(tag6F === '6F');
+
+        var tag6FLength = tlv.getLength();
+        assert(tag6FLength === 0x3A);
+
+        var tag6FValue = tlv.getValue();
+        assert(tag6FValue === '8407A0000000041010A52F500A4D6173746572436172649F38069F5C089F4005BF0C179F5E095413339000001513019F5D030101009F4D020B0A');
+
+
+        var child = tlv.getChild();
+        //tlv.print()
+        assert(child.length === 2);
+
+
+    },
+
     'tlv parse' : {
-        'check tag': function() {
+        'getTag': function() {
             var tlv;
             tlv = TLV.parse('6F098407A0000000041010');
             assert(tlv.getTag() == '6F');
