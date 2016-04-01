@@ -5,7 +5,7 @@ node base tlv parser
 
 ## Example
 
-	var TLV = require('./lib/TLV');
+	var TLV = require('node-tlv');
 	var assert = require('assert');
 
 	//parse TLV
