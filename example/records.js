@@ -1,9 +1,7 @@
 var TLV = require('../lib/TLV.js');
 
 
-
-
-var resps = 
+var resps =
 [
   '70385F24032012315F25030601019F0702FF005A0854133390000015139F0D05F8406420009F0E0500108800009F0F05F86064F8005F28020056',
   '70538C279F02069F03069F1A0295055F2A029A039C019F37049F35019F45029F4C089F34039F21039F7C148D12910A8A0295059F37049F4C089F02069F03068E1400000000000000004201440341035E0342031F03',
@@ -21,25 +19,25 @@ var resps =
 
 
 function main() {
-	// record data element record -> dataElement
-	var dataElement = [];
+    // record data element record -> dataElement
+    var dataElement = [];
 
-	
-	resps.forEach(function (item){
-    	// parse each record    
+
+    resps.forEach(function (item){
+        // parse each record
         var tlv = TLV.parse(item);
 
         // record have 1 depth children
         var children = tlv.getChild();
         // concatenate array
         dataElement = dataElement.concat(children);
-	});
+    });
 
-	
-	dataElement.forEach(function (tlv){
-		tlv.print();
-		console.log('');
-	});
+
+    dataElement.forEach(function (tlv){
+        tlv.print();
+        console.log('');
+    });
 
 }
 

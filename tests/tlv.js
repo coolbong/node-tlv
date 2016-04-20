@@ -9,7 +9,7 @@ var TLV = require('../lib/TLV');
 
 exports.tlv = {
 
-    'exmaple' : function() {
+    'example' : function() {
         var response = '6F3A8407A0000000041010A52F500A4D6173746572436172649F38069F5C089F4005BF0C179F5E095413339000001513019F5D030101009F4D020B0A';
         var tlv = TLV.parse(response);
 
@@ -178,6 +178,7 @@ exports.tlv = {
     },
     'getL()' : function() {
 
+        var tlv;
         tlv = new TLV(0x06, '2A1234', TLV.EMV);
         assert(tlv.getL() == '03');
 
@@ -233,6 +234,7 @@ exports.tlv = {
         assert(tlv.getLV() == '032A1234');
     },
     'getTag()' : function() {
+        var tlv;
         tlv = new TLV(0x06, '2A1234', TLV.EMV);
         assert(tlv.getTag() == '06');
 
@@ -248,7 +250,7 @@ exports.tlv = {
         tlv = new TLV(0x06, '2A1234', TLV.EMV);
         assert(tlv.getTLV() == "06032A1234");
 
-        data = new Buffer('561000', 'ascii')
+        data = new Buffer('561000', 'ascii');
         tlv = new TLV(0x1201, data, TLV.DGI);
         assert(tlv.getTLV() == "120106353631303030");
     },
@@ -260,6 +262,14 @@ exports.tlv = {
 
         tlv = new TLV(0x061F, '2A1234', TLV.DGI);
         assert(tlv.getValue() == '2A1234');
+    },
+    'getEncoding()' : function() {
+        var tlv;
+        tlv = new TLV(0x06, '2A1234', TLV.EMV);
+        assert(tlv.getEncoding() === TLV.EMV);
+
+        tlv = new TLV(0x061F, '2A1234', TLV.DGI);
+        assert(tlv.getEncoding() === TLV.DGI);
     },
     'util': {
         'getLength' : function() {
