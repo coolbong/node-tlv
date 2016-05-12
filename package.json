@@ -1,6 +1,6 @@
 {
   "name": "node-tlv",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "node tlv parser",
   "main": "./lib/TLV.js",
   "keywords": [
@@ -19,5 +19,8 @@
   "repository": {
     "type": "git",
     "url": "http://github.com/coolbong/node-tlv"
+  },
+  "scripts": {
+    "test": "mocha -u exports ./tests"
   }
 }

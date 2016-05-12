@@ -243,6 +243,9 @@ exports.tlv = {
 
         tlv = new TLV(0x061F, '2A1234', TLV.DGI);
         assert(tlv.getTag() == '061F');
+
+        tlv = new TLV('', '1234');
+        assert(tlv.getTag() == '');
     },
     'getTLV()' : function() {
         var tlv;
@@ -253,6 +256,9 @@ exports.tlv = {
         data = new Buffer('561000', 'ascii');
         tlv = new TLV(0x1201, data, TLV.DGI);
         assert(tlv.getTLV() == "120106353631303030");
+
+        tlv = new TLV('', 'FE5960267173B426A62024AF18E7D978');
+        assert(tlv.getTLV() == '10FE5960267173B426A62024AF18E7D978');
     },
     'getValue()' : function() {
         var tlv;
