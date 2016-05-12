@@ -277,6 +277,11 @@ exports.tlv = {
         tlv = new TLV(0x061F, '2A1234', TLV.DGI);
         assert(tlv.getEncoding() === TLV.DGI);
     },
+    'getName()' : function() {
+        var tlv;
+        tlv = new TLV('', 'FE5960267173B426A62024AF18E7D978');
+        assert(tlv.getName() == '');
+    },
     'util': {
         'getLength' : function() {
 
