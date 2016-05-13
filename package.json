@@ -13,9 +13,7 @@
   "devDependencies": {
     "mocha": "*"
   },
-  "license": {
-    "type": "MIT"
-  },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "http://github.com/coolbong/node-tlv"
