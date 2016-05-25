@@ -282,6 +282,21 @@ exports.tlv = {
         tlv = new TLV('', 'FE5960267173B426A62024AF18E7D978');
         assert(tlv.getName() == '');
     },
+    'TLV.L()' : function() {
+        var data = 'F8C40DEA18E95A0B';
+        var l = TLV.L(data);
+        assert(l === '08');
+    },
+    'TLV.LV()': function() {
+        var data = 'F8C40DEA18E95A0B';
+        var lv = TLV.LV(data);
+        assert(lv === '08' + data);
+    },
+    'TLV.TLV()': function() {
+        var data = 'F8C40DEA18E95A0B';
+        var tlv = TLV.TLV('00', data);
+        assert(tlv === '0008' + data);
+    },
     'util': {
         'getLength' : function() {
 

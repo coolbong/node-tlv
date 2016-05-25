@@ -4,7 +4,7 @@
   "description": "node tlv parser",
   "main": "./lib/TLV.js",
   "keywords": [
-    "TLV", "DGI", "Ber-TLV", "EMV", "ISO7816"
+    "TLV", "DGI", "Ber-TLV", "EMV", "ISO7816", "SIMPLE-TLV"
   ],
   "author": {
     "name": "coolbong",
