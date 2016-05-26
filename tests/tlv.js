@@ -143,6 +143,24 @@ exports.tlv = {
             assert(tlv.getLength() == 0x06);
         }
     },
+    'tlv parse error case' : {
+        'parse undefined ' : function() {
+            var tlv;
+            tlv = TLV.parse();
+
+            assert(tlv.getTag() === '');
+            assert(tlv.getLength() === 0);
+            assert(tlv.getValue() === '');
+        },
+        'parse empty string' : function() {
+            var tlv;
+            tlv = TLV.parse('');
+            
+            assert(tlv.getTag() === '');
+            assert(tlv.getLength() === 0);
+            assert(tlv.getValue() === '');
+        }
+    },
     'constructor' : function() {
         var tlv;
         var data;
