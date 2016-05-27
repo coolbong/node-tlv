@@ -295,6 +295,21 @@ exports.tlv = {
         tlv = new TLV(0x061F, '2A1234', TLV.DGI);
         assert(tlv.getEncoding() === TLV.DGI);
     },
+    'getSize()' : function() {
+        var tlv;
+
+        tlv = new TLV(0x82, '7900');
+        assert(tlv.getLength() == 2);
+        assert(tlv.getSize() == 4);
+
+        var buf = new Buffer(128);
+        buf.fill(0x00);
+        tlv = new TLV(0x77, buf);
+
+        assert(tlv.getLength() == 128);
+        assert(tlv.getSize() == 131);
+
+    },
     'getName()' : function() {
         var tlv;
         tlv = new TLV('', 'FE5960267173B426A62024AF18E7D978');
@@ -370,7 +385,6 @@ exports.tlv = {
             ret = TLV.adjustTag(buf);
             assert(ret == 'DF30');
 
-            
         }
     }
 };
