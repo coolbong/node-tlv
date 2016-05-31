@@ -334,20 +334,20 @@ exports.tlv = {
         'getLength' : function() {
 
             // fixme assert
-            var buf = new Buffer(127);
-            TLV.getBufferLength(buf);
+            //var buf = new Buffer(127);
+            TLV.getBufferLength(127);
 
-            buf = new Buffer(255);
-            TLV.getBufferLength(buf);
+            //buf = new Buffer(255);
+            TLV.getBufferLength(255);
 
-            buf = new Buffer(0x1234);
-            TLV.getBufferLength(buf);
+            //buf = new Buffer(0x1234);
+            TLV.getBufferLength(0x1234);
 
-            buf = new Buffer(0x123456);
-            TLV.getBufferLength(buf);
+            //buf = new Buffer(0x123456);
+            TLV.getBufferLength(0x123456);
 
-            buf = new Buffer(0x12345678);
-            TLV.getBufferLength(buf);
+            //buf = new Buffer(0x12345678);
+            TLV.getBufferLength(0x12345678);
         },
         'adjustTag' : function() {
             var ret;
