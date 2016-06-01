@@ -1,8 +1,4 @@
 node_modules/
-<<<<<<< HEAD
-.idea/
-=======
 .git*
 .DS_Store
 .idea
->>>>>>> e26f267cd68b66fa197d3f404634979d281d0791
