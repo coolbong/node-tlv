@@ -57,4 +57,4 @@ node base tlv parser
 
 You can install the latest tag via npm:
 
-	npm install git://github.com/coolbong/node-tlv.git
+	npm install node-tlv

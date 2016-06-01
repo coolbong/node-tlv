@@ -1,10 +1,10 @@
 {
   "name": "node-tlv",
-  "version": "0.0.1",
+  "version": "1.1.0",
   "description": "node tlv parser",
   "main": "./lib/TLV.js",
   "keywords": [
-    "TLV", "DGI", "Ber-TLV"
+    "TLV", "DGI", "Ber-TLV", "EMV", "ISO7816", "SIMPLE-TLV", "DOL"
   ],
   "author": {
     "name": "coolbong",
@@ -13,11 +13,12 @@
   "devDependencies": {
     "mocha": "*"
   },
-  "license": {
-    "type": "MIT"
-  },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "http://github.com/coolbong/node-tlv"
+  },
+  "scripts": {
+    "test": "mocha -u exports ./tests"
   }
 }

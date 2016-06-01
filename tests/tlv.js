@@ -1,5 +1,7 @@
 /**
  * Created by coolbong on 2016-03-25.
+ * reference 
+ * - http://www.openscdp.org/scsh3/tlv.html
  */
 
 var assert = require('assert');
@@ -7,8 +9,7 @@ var TLV = require('../lib/TLV');
 
 exports.tlv = {
 
-    'exmaple' : function() {
-
+    'example' : function() {
         var response = '6F3A8407A0000000041010A52F500A4D6173746572436172649F38069F5C089F4005BF0C179F5E095413339000001513019F5D030101009F4D020B0A';
         var tlv = TLV.parse(response);
 
@@ -23,18 +24,15 @@ exports.tlv = {
 
 
         var child = tlv.getChild();
-        //tlv.print()
         assert(child.length === 2);
-
-
     },
 
-    'tlv parse' : {
+    'tlv parse TLV.EMV' : {
         'getTag': function() {
             var tlv;
             tlv = TLV.parse('6F098407A0000000041010');
             assert(tlv.getTag() == '6F');
-/*
+
             tlv = TLV.parse('6F3A8407A0000000041010A52F500A4D6173746572436172649F38069F5C089F4005BF0C179F5E095413339000001513019F5D030101009F4D020B0A');
             assert(tlv.getTag() == '6F');
 
@@ -97,33 +95,265 @@ exports.tlv = {
 
             tlv = TLV.parse('DF4101C1');
             assert(tlv.getTag() == 'DF41');
-            */
         }
     },
+    'tlv parse TLV.DGI' : {
+        'create DGI TLV' :  function() {
+            // fixme
+            // more length checking
+            // 0x7F // 7F
+            // 0x80 // 80
+            // 0xFF //
+        },
 
+        'getTag' : function() {
+            var tlv;
+
+            tlv = TLV.parse('01017770759F6C0200019F62060000003800009F630600000000E0E0563442353431333333393030303030313531335E202F5E323031323230313333303030333333303030323232323230303031313131309F6401039F6502000E9F66020E709F6B135413339000001513D20122019000990000000F9F670103', TLV.DGI);
+            assert(tlv.getTag() == '0101');
+
+            tlv = TLV.parse('02013A70385F24032012315F25030601019F0702FF005A0854133390000015139F0D05F8406420009F0E0500108800009F0F05F86064F8005F28020056', TLV.DGI);
+            assert(tlv.getTag() == '0201');
+
+            tlv = TLV.parse('02025570538C279F02069F03069F1A0295055F2A029A039C019F37049F35019F45029F4C089F34039F21039F7C148D12910A8A0295059F37049F4C089F02069F03068E1400000000000000004201440341035E0342031F03', TLV.DGI);
+            assert(tlv.getTag() == '0202');
+
+            tlv = TLV.parse('02033570339F420209789F0802000257125413339000001513D20122010000000000009F5B0CDF6008DF6108DF6201DF63A09F51039F3704', TLV.DGI);
+            assert(tlv.getTag() == '0203');
+
+            tlv = TLV.parse('02040670049F320103', TLV.DGI);
+            assert(tlv.getTag() == '0204');
+        },
+        'getLength' : function() {
+            var tlv;
+
+            tlv = TLV.parse('01017770759F6C0200019F62060000003800009F630600000000E0E0563442353431333333393030303030313531335E202F5E323031323230313333303030333333303030323232323230303031313131309F6401039F6502000E9F66020E709F6B135413339000001513D20122019000990000000F9F670103', TLV.DGI);
+            assert(tlv.getLength() == 0x77);
+
+            tlv = TLV.parse('02013A70385F24032012315F25030601019F0702FF005A0854133390000015139F0D05F8406420009F0E0500108800009F0F05F86064F8005F28020056', TLV.DGI);
+            assert(tlv.getLength() == 0x3A);
+
+            tlv = TLV.parse('02025570538C279F02069F03069F1A0295055F2A029A039C019F37049F35019F45029F4C089F34039F21039F7C148D12910A8A0295059F37049F4C089F02069F03068E1400000000000000004201440341035E0342031F03', TLV.DGI);
+            assert(tlv.getLength() == 0x55);
+
+            tlv = TLV.parse('02033570339F420209789F0802000257125413339000001513D20122010000000000009F5B0CDF6008DF6108DF6201DF63A09F51039F3704', TLV.DGI);
+            assert(tlv.getLength() == 0x35);
+
+            tlv = TLV.parse('02040670049F320103', TLV.DGI);
+            assert(tlv.getLength() == 0x06);
+        }
+    },
+    'tlv parse error case' : {
+        'parse undefined ' : function() {
+            var tlv;
+            tlv = TLV.parse();
+
+            assert(tlv.getTag() === '');
+            assert(tlv.getLength() === 0);
+            assert(tlv.getValue() === '');
+        },
+        'parse empty string' : function() {
+            var tlv;
+            tlv = TLV.parse('');
+            
+            assert(tlv.getTag() === '');
+            assert(tlv.getLength() === 0);
+            assert(tlv.getValue() === '');
+        }
+    },
+    'constructor' : function() {
+        var tlv;
+        var data;
+
+        tlv = new TLV(0x06, '2A1234', TLV.EMV);
+        assert(tlv.encodingMode == TLV.EMV);
+        assert(tlv.size == 5);
+
+        tlv = new TLV(0x0601, '2A1234', TLV.EMV);
+        assert(tlv.encodingMode == TLV.EMV);
+        assert(tlv.size == 6);
+
+
+        //fixme
+        //try {
+        //    // Invalid tag for EMV  
+        //    tlv = new TLV(0x6FFFFF, '2A1234', TLV.EMV);
+        //} catch (e) {
+        //    assert(e instanceof Error);
+        //}
+
+
+        data = new Buffer('561000', 'ascii');
+        tlv = new TLV(0x1201, data, TLV.DGI);
+        assert(tlv.encodingMode == TLV.DGI);
+        assert(tlv.size == 9);
+
+        tlv = new TLV(0x12, data, TLV.DGI);
+        assert(tlv.encodingMode == TLV.DGI);
+        assert(tlv.size == 9);
+        
+
+    },
+    'getL()' : function() {
+
+        var tlv;
+        tlv = new TLV(0x06, '2A1234', TLV.EMV);
+        assert(tlv.getL() == '03');
+
+        // 130 bytes
+        tlv = new TLV(0x06, 
+            '00010203040506070809000102030405060708090001020304050607080900010203040' + 
+            '50607080900010203040506070809000102030405060708090001020304050607080900' +
+            '01020304050607080900010203040506070809000102030405060708090001020304050' +
+            '60708090001020304050607080900010203040506070809', TLV.EMV);
+        assert(tlv.getL() == '8182');
+
+        // 260 bytes
+        tlv = new TLV(0x06, 
+            '00010203040506070809000102030405060708090001020304050607080900010203040' +
+            '50607080900010203040506070809000102030405060708090001020304050607080900' +
+            '01020304050607080900010203040506070809000102030405060708090001020304050' +
+            '60708090001020304050607080900010203040506070809000102030405060708090001' +
+            '02030405060708090001020304050607080900010203040506070809000102030405060' +
+            '70809000102030405060708090001020304050607080900010203040506070809000102' +
+            '03040506070809000102030405060708090001020304050607080900010203040506070' +
+            '80900010203040506070809', TLV.EMV);
+        assert(tlv.getL() == '820104');
+
+
+        tlv = new TLV(0x06, '2A1234', TLV.DGI);
+        assert(tlv.getL() == '03');
+
+        tlv = new TLV(0x06, 
+            '00010203040506070809000102030405060708090001020304050607080900010203040' +
+            '50607080900010203040506070809000102030405060708090001020304050607080900' +
+            '01020304050607080900010203040506070809000102030405060708090001020304050' +
+            '60708090001020304050607080900010203040506070809000102030405060708090001' +
+            '02030405060708090001020304050607080900010203040506070809000102030405060' +
+            '70809000102030405060708090001020304050607080900010203040506070809000102' +
+            '03040506070809000102030405060708090001020304050607080900010203040506070' +
+            '80900010203040506070809', TLV.DGI);
+        assert(tlv.getL() == 'FF0104');
+    },
+    'getTV()' : function() {
+        var tlv;
+        tlv = new TLV(0x06, '2A1234', TLV.EMV);
+        assert(tlv.getTV() == "062A1234");
+
+        tlv = new TLV(0x061F, '2A1234', TLV.DGI);
+        assert(tlv.getTV() == "061F2A1234");
+    },
+    'getLV()' : function() {
+        var tlv;
+        tlv =  new TLV(0x06, '2A1234', TLV.EMV);
+        assert(tlv.getLV() == '032A1234');
+
+        tlv =  new TLV(0x06, '2A1234', TLV.DGI);
+        assert(tlv.getLV() == '032A1234');
+    },
+    'getTag()' : function() {
+        var tlv;
+        tlv = new TLV(0x06, '2A1234', TLV.EMV);
+        assert(tlv.getTag() == '06');
+
+        tlv = new TLV(0x9F03, '2A1234', TLV.EMV);
+        assert(tlv.getTag() == '9F03');
+
+        tlv = new TLV(0x061F, '2A1234', TLV.DGI);
+        assert(tlv.getTag() == '061F');
+
+        tlv = new TLV('', '1234');
+        assert(tlv.getTag() == '');
+    },
+    'getTLV()' : function() {
+        var tlv;
+        var data;
+        tlv = new TLV(0x06, '2A1234', TLV.EMV);
+        assert(tlv.getTLV() == "06032A1234");
+
+        data = new Buffer('561000', 'ascii');
+        tlv = new TLV(0x1201, data, TLV.DGI);
+        assert(tlv.getTLV() == "120106353631303030");
+
+        tlv = new TLV('', 'FE5960267173B426A62024AF18E7D978');
+        assert(tlv.getTLV() == '10FE5960267173B426A62024AF18E7D978');
+    },
+    'getValue()' : function() {
+        var tlv;
+        tlv = new TLV(0x06, '2A1234', TLV.EMV);
+        assert(tlv.getValue() == '2A1234');
+
+
+        tlv = new TLV(0x061F, '2A1234', TLV.DGI);
+        assert(tlv.getValue() == '2A1234');
+    },
+    'getEncoding()' : function() {
+        var tlv;
+        tlv = new TLV(0x06, '2A1234', TLV.EMV);
+        assert(tlv.getEncoding() === TLV.EMV);
+
+        tlv = new TLV(0x061F, '2A1234', TLV.DGI);
+        assert(tlv.getEncoding() === TLV.DGI);
+    },
+    'getSize()' : function() {
+        var tlv;
+
+        tlv = new TLV(0x82, '7900');
+        assert(tlv.getLength() == 2);
+        assert(tlv.getSize() == 4);
+
+        var buf = new Buffer(128);
+        buf.fill(0x00);
+        tlv = new TLV(0x77, buf);
+
+        assert(tlv.getLength() == 128);
+        assert(tlv.getSize() == 131);
+
+    },
+    'getName()' : function() {
+        var tlv;
+        tlv = new TLV('', 'FE5960267173B426A62024AF18E7D978');
+        assert(tlv.getName() == '');
+    },
+    'TLV.L()' : function() {
+        var data = 'F8C40DEA18E95A0B';
+        var l = TLV.L(data);
+        assert(l === '08');
+    },
+    'TLV.LV()': function() {
+        var data = 'F8C40DEA18E95A0B';
+        var lv = TLV.LV(data);
+        assert(lv === '08' + data);
+    },
+    'TLV.TLV()': function() {
+        var data = 'F8C40DEA18E95A0B';
+        var tlv = TLV.TLV('00', data);
+        assert(tlv === '0008' + data);
+    },
     'util': {
         'getLength' : function() {
 
             // fixme assert
-            var buf = new Buffer(127);
-            TLV.getBufferLength(buf);
+            //var buf = new Buffer(127);
+            TLV.getBufferLength(127);
 
-            buf = new Buffer(255);
-            TLV.getBufferLength(buf);
+            //buf = new Buffer(255);
+            TLV.getBufferLength(255);
 
-            buf = new Buffer(0x1234);
-            TLV.getBufferLength(buf);
+            //buf = new Buffer(0x1234);
+            TLV.getBufferLength(0x1234);
 
-            buf = new Buffer(0x123456);
-            TLV.getBufferLength(buf);
+            //buf = new Buffer(0x123456);
+            TLV.getBufferLength(0x123456);
 
-            buf = new Buffer(0x12345678);
-            TLV.getBufferLength(buf);
+            //buf = new Buffer(0x12345678);
+            TLV.getBufferLength(0x12345678);
         },
         'adjustTag' : function() {
             var ret;
             var num;
             var str;
+            var buf;
 
             num = 0x80;
             ret = TLV.adjustTag(num);
@@ -136,6 +366,25 @@ exports.tlv = {
             str = '00C0';
             ret = TLV.adjustTag(str);
             assert(ret == 'C0');
+
+            buf = new Buffer(1);
+            buf[0] = 0x82;
+            ret = TLV.adjustTag(buf);
+            assert(ret == '82');
+            
+            buf = new Buffer(2);
+            buf[0] = 0xDF;
+            buf[1] = 0x30;
+            ret = TLV.adjustTag(buf);
+            assert(ret == 'DF30');
+
+            buf = new Buffer(3);
+            buf[0] = 0x00;
+            buf[1] = 0xDF;
+            buf[2] = 0x30;
+            ret = TLV.adjustTag(buf);
+            assert(ret == 'DF30');
+
         }
     }
 };
