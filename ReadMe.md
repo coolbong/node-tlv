@@ -1,5 +1,4 @@
 # node-tlv
-===========
 
 node base tlv parser
 
@@ -7,7 +6,6 @@ node base tlv parser
 
 
 ## Example
-===========
 	var TLV = require('node-tlv');
 	var assert = require('assert');
 
@@ -40,7 +38,6 @@ node base tlv parser
 
 
 ## Installation
-===========
 You can install the latest tag via npm:
 
 	npm install node-tlv
