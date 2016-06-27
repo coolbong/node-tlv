@@ -1,5 +1,5 @@
 /**
- * Created by haksookim on 2016-05-30.
+ * Created by coolbong on 2016-05-30.
  */
 var assert = require('assert');
 var DOL = require('../lib/TLV').DOL;
