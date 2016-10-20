@@ -48,13 +48,20 @@ exports.tlv = {
         assert(aip.getTag() === '82');
         assert(aip.getLength() === 2);
         assert(aip.getValue() === '5800');
+        //aip.print();
 
 
         var afl = tlv.find('94');
         assert(afl.getTag() === '94');
         assert(afl.getLength() === 0x08);
         assert(afl.getValue() === '0801010010010301');
+        //afl.print();
 
+    },
+    'example 3' : function() {
+        var tag_3_bytes = 'DF810742000000000001000000000001005600000000000978090419001234876536DAC000000000000000000000001159594D6173746572436172642D57617465726C6F';
+        var tlv = TLV.parse(tag_3_bytes);
+        assert(tlv.getTag() === 'DF8107');
     },
 
     'tlv parse TLV.EMV' : {
