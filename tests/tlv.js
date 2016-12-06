@@ -423,5 +423,6 @@ exports.tlv = {
             assert(ret == 'DF30');
 
         }
-    }
+    },
+
 };
