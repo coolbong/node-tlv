@@ -31,6 +31,7 @@ node base tlv parser
 	assert(aip.getLength() === 2);
 	assert(aip.getValue() === '5800');
 
+	// you can also use a string tag value
 	var afl = tlv.find('94');
 	assert(afl.getTag() === '94');
 	assert(afl.getLength() === 0x08);
