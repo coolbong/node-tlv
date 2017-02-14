@@ -13,9 +13,9 @@ exports.record = {
         // Primary Account Number
         var pan = tlv.find('5A');
 
-        
         var value = pan.getValue();
         assert(value.length === 16);
-
     }
+
+
 };

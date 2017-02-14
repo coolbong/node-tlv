@@ -386,43 +386,6 @@ exports.tlv = {
             //buf = new Buffer(0x12345678);
             TLV.getBufferLength(0x12345678);
         },
-        'adjustTag' : function() {
-            var ret;
-            var num;
-            var str;
-            var buf;
-
-            num = 0x80;
-            ret = TLV.adjustTag(num);
-            assert(ret == '80');
-
-            str = '8';
-            ret = TLV.adjustTag(str);
-            assert(ret == '08');
-
-            str = '00C0';
-            ret = TLV.adjustTag(str);
-            assert(ret == 'C0');
-
-            buf = new Buffer(1);
-            buf[0] = 0x82;
-            ret = TLV.adjustTag(buf);
-            assert(ret == '82');
-            
-            buf = new Buffer(2);
-            buf[0] = 0xDF;
-            buf[1] = 0x30;
-            ret = TLV.adjustTag(buf);
-            assert(ret == 'DF30');
-
-            buf = new Buffer(3);
-            buf[0] = 0x00;
-            buf[1] = 0xDF;
-            buf[2] = 0x30;
-            ret = TLV.adjustTag(buf);
-            assert(ret == 'DF30');
-
-        }
     },
 
 };
