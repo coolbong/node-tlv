@@ -1,0 +1,81 @@
+{
+  "11": {
+    "operator": "Financial Institution",
+    "type": "Online only",
+    "environment": "attended"
+  },
+  "12": {
+    "operator": "Financial Institution",
+    "type": "Offline with online capabilities",
+    "environment": "attended"
+  },
+  "13": {
+    "operator": "Financial Institution",
+    "type": "Offline only",
+    "environment": "attended"
+  },
+  "14": {
+    "operator": "Financial Institution",
+    "type": "Online only",
+    "environment": "unattended"
+  },
+  "15": {
+    "operator": "Financial Institution",
+    "type": "Offline with online capabilities",
+    "environment": "unattended"
+  },
+  "16": {
+    "operator": "Financial Institution",
+    "type": "Offline only",
+    "environment": "unattended"
+  },
+
+  "21": {
+    "operator": "Merchant",
+    "type": "Online only",
+    "environment": "attended"
+  },
+  "22": {
+    "operator": "Merchant",
+    "type": "Offline with online capabilities",
+    "environment": "attended"
+  },
+  "23": {
+    "operator": "Merchant",
+    "type": "Offline only",
+    "environment": "attended"
+  },
+  "24": {
+    "operator": "Merchant",
+    "type": "Online only",
+    "environment": "unattended"
+  },
+  "25": {
+    "operator": "Merchant",
+    "type": "Offline with online capabilities",
+    "environment": "unattended"
+  },
+  "26": {
+    "operator": "Merchant",
+    "type": "Offline only",
+    "environment": "unattended"
+  },
+
+  "34": {
+    "operator": "Cardholder",
+    "type": "Online only",
+    "environment": "unattended"
+  },
+  "35": {
+    "operator": "Cardholder",
+    "type": "Offline with online capabilities",
+    "environment": "unattended"
+  },
+  "36": {
+    "operator": "Cardholder",
+    "type": "Offline only",
+    "environment": "unattended"
+  }
+
+
+}

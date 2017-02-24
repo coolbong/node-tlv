@@ -1,0 +1,1436 @@
+{
+  "0004": {
+    "country": "AFGHANISTAN",
+    "A2": "AF",
+    "A3": "AFG",
+    "number": "0004"
+  },
+  "0008": {
+    "country": "ALBANIA",
+    "A2": "AL",
+    "A3": "ALB",
+    "number": "0008"
+  },
+  "0012": {
+    "country": "ALGERIA",
+    "A2": "DZ",
+    "A3": "DZA",
+    "number": "0012"
+  },
+  "0016": {
+    "country": "AMERICAN SAMOA",
+    "A2": "AS",
+    "A3": "ASM",
+    "number": "0016"
+  },
+  "0020": {
+    "country": "ANDORRA",
+    "A2": "AD",
+    "A3": "AND",
+    "number": "0020"
+  },
+  "0024": {
+    "country": "ANGOLA",
+    "A2": "AO",
+    "A3": "AGO",
+    "number": "0024"
+  },
+  "0660": {
+    "country": "ANGUILLA",
+    "A2": "AI",
+    "A3": "AIA",
+    "number": "0660"
+  },
+  "0010": {
+    "country": "ANTARCTICA",
+    "A2": "AQ",
+    "A3": "ATA",
+    "number": "0010"
+  },
+  "0028": {
+    "country": "ANTIGUA AND BARBUDA",
+    "A2": "AG",
+    "A3": "ATG",
+    "number": "0028"
+  },
+  "0032": {
+    "country": "ARGENTINA",
+    "A2": "AR",
+    "A3": "ARG",
+    "number": "0032"
+  },
+  "0051": {
+    "country": "ARMENIA",
+    "A2": "AM",
+    "A3": "ARM",
+    "number": "0051"
+  },
+  "0533": {
+    "country": "ARUBA",
+    "A2": "AW",
+    "A3": "ABW",
+    "number": "0533"
+  },
+  "0036": {
+    "country": "AUSTRALIA",
+    "A2": "AU",
+    "A3": "AUS",
+    "number": "0036"
+  },
+  "0040": {
+    "country": "AUSTRIA",
+    "A2": "AT",
+    "A3": "AUT",
+    "number": "0040"
+  },
+  "0031": {
+    "country": "AZERBAIJAN",
+    "A2": "AZ",
+    "A3": "AZE",
+    "number": "0031"
+  },
+  "0044": {
+    "country": "BAHAMAS",
+    "A2": "BS",
+    "A3": "BHS",
+    "number": "0044"
+  },
+  "0048": {
+    "country": "BAHRAIN",
+    "A2": "BH",
+    "A3": "BHR",
+    "number": "0048"
+  },
+  "0050": {
+    "country": "BANGLADESH",
+    "A2": "BD",
+    "A3": "BGD",
+    "number": "0050"
+  },
+  "0052": {
+    "country": "BARBADOS",
+    "A2": "BB",
+    "A3": "BRB",
+    "number": "0052"
+  },
+  "0112": {
+    "country": "BELARUS",
+    "A2": "BY",
+    "A3": "BLR",
+    "number": "0112"
+  },
+  "0056": {
+    "country": "BELGIUM",
+    "A2": "BE",
+    "A3": "BEL",
+    "number": "0056"
+  },
+  "0084": {
+    "country": "BELIZE",
+    "A2": "BZ",
+    "A3": "BLZ",
+    "number": "0084"
+  },
+  "0204": {
+    "country": "BENIN",
+    "A2": "BJ",
+    "A3": "BEN",
+    "number": "0204"
+  },
+  "0060": {
+    "country": "BERMUDA",
+    "A2": "BM",
+    "A3": "BMU",
+    "number": "0060"
+  },
+  "0064": {
+    "country": "BHUTAN",
+    "A2": "BT",
+    "A3": "BTN",
+    "number": "0064"
+  },
+  "0068": {
+    "country": "BOLIVIA",
+    "A2": "BO",
+    "A3": "BOL",
+    "number": "0068"
+  },
+  "0070": {
+    "country": "BOSNIA AND HERZEGOWINA",
+    "A2": "BA",
+    "A3": "BIH",
+    "number": "0070"
+  },
+  "0072": {
+    "country": "BOTSWANA",
+    "A2": "BW",
+    "A3": "BWA",
+    "number": "0072"
+  },
+  "0074": {
+    "country": "BOUVET ISLAND",
+    "A2": "BV",
+    "A3": "BVT",
+    "number": "0074"
+  },
+  "0076": {
+    "country": "BRAZIL",
+    "A2": "BR",
+    "A3": "BRA",
+    "number": "0076"
+  },
+  "0086": {
+    "country": "BRITISH INDIAN OCEAN TERRITORY",
+    "A2": "IO",
+    "A3": "IOT",
+    "number": "0086"
+  },
+  "0096": {
+    "country": "BRUNEI DARUSSALAM",
+    "A2": "BN",
+    "A3": "BRN",
+    "number": "0096"
+  },
+  "0100": {
+    "country": "BULGARIA",
+    "A2": "BG",
+    "A3": "BGR",
+    "number": "0100"
+  },
+  "0854": {
+    "country": "BURKINA FASO",
+    "A2": "BF",
+    "A3": "BFA",
+    "number": "0854"
+  },
+  "0108": {
+    "country": "BURUNDI",
+    "A2": "BI",
+    "A3": "BDI",
+    "number": "0108"
+  },
+  "0116": {
+    "country": "CAMBODIA",
+    "A2": "KH",
+    "A3": "KHM",
+    "number": "0116"
+  },
+  "0120": {
+    "country": "CAMEROON",
+    "A2": "CM",
+    "A3": "CMR",
+    "number": "0120"
+  },
+  "0124": {
+    "country": "CANADA",
+    "A2": "CA",
+    "A3": "CAN",
+    "number": "0124"
+  },
+  "0132": {
+    "country": "CAPE VERDE",
+    "A2": "CV",
+    "A3": "CPV",
+    "number": "0132"
+  },
+  "0136": {
+    "country": "CAYMAN ISLANDS",
+    "A2": "KY",
+    "A3": "CYM",
+    "number": "0136"
+  },
+  "0140": {
+    "country": "CENTRAL AFRICAN REPUBLIC",
+    "A2": "CF",
+    "A3": "CAF",
+    "number": "0140"
+  },
+  "0148": {
+    "country": "CHAD",
+    "A2": "TD",
+    "A3": "TCD",
+    "number": "0148"
+  },
+  "0152": {
+    "country": "CHILE",
+    "A2": "CL",
+    "A3": "CHL",
+    "number": "0152"
+  },
+  "0156": {
+    "country": "CHINA",
+    "A2": "CN",
+    "A3": "CHN",
+    "number": "0156"
+  },
+  "0162": {
+    "country": "CHRISTMAS ISLAND",
+    "A2": "CX",
+    "A3": "CXR",
+    "number": "0162"
+  },
+  "0166": {
+    "country": "COCOS (KEELING) ISLANDS",
+    "A2": "CC",
+    "A3": "CCK",
+    "number": "0166"
+  },
+  "0170": {
+    "country": "COLOMBIA",
+    "A2": "CO",
+    "A3": "COL",
+    "number": "0170"
+  },
+  "0174": {
+    "country": "COMOROS",
+    "A2": "KM",
+    "A3": "COM",
+    "number": "0174"
+  },
+  "0178": {
+    "country": "CONGO",
+    "A2": "CG",
+    "A3": "COG",
+    "number": "0178"
+  },
+  "0180": {
+    "country": "CONGO, THE DEMOCRATIC REPUBLIC OF THE",
+    "A2": "CD",
+    "A3": "COD",
+    "number": "0180"
+  },
+  "0184": {
+    "country": "COOK ISLANDS",
+    "A2": "CK",
+    "A3": "COK",
+    "number": "0184"
+  },
+  "0188": {
+    "country": "COSTA RICA",
+    "A2": "CR",
+    "A3": "CRI",
+    "number": "0188"
+  },
+  "0384": {
+    "country": "COTE D'IVOIRE",
+    "A2": "CI",
+    "A3": "CIV",
+    "number": "0384"
+  },
+  "0191": {
+    "country": "CROATIA (local name: Hrvatska)",
+    "A2": "HR",
+    "A3": "HRV",
+    "number": "0191"
+  },
+  "0192": {
+    "country": "CUBA",
+    "A2": "CU",
+    "A3": "CUB",
+    "number": "0192"
+  },
+  "0196": {
+    "country": "CYPRUS",
+    "A2": "CY",
+    "A3": "CYP",
+    "number": "0196"
+  },
+  "0203": {
+    "country": "CZECH REPUBLIC",
+    "A2": "CZ",
+    "A3": "CZE",
+    "number": "0203"
+  },
+  "0208": {
+    "country": "DENMARK",
+    "A2": "DK",
+    "A3": "DNK",
+    "number": "0208"
+  },
+  "0262": {
+    "country": "DJIBOUTI",
+    "A2": "DJ",
+    "A3": "DJI",
+    "number": "0262"
+  },
+  "0212": {
+    "country": "DOMINICA",
+    "A2": "DM",
+    "A3": "DMA",
+    "number": "0212"
+  },
+  "0214": {
+    "country": "DOMINICAN REPUBLIC",
+    "A2": "DO",
+    "A3": "DOM",
+    "number": "0214"
+  },
+  "0626": {
+    "country": "EAST TIMOR",
+    "A2": "TP",
+    "A3": "TMP",
+    "number": "0626"
+  },
+  "0218": {
+    "country": "ECUADOR",
+    "A2": "EC",
+    "A3": "ECU",
+    "number": "0218"
+  },
+  "0818": {
+    "country": "EGYPT",
+    "A2": "EG",
+    "A3": "EGY",
+    "number": "0818"
+  },
+  "0222": {
+    "country": "EL SALVADOR",
+    "A2": "SV",
+    "A3": "SLV",
+    "number": "0222"
+  },
+  "0226": {
+    "country": "EQUATORIAL GUINEA",
+    "A2": "GQ",
+    "A3": "GNQ",
+    "number": "0226"
+  },
+  "0232": {
+    "country": "ERITREA",
+    "A2": "ER",
+    "A3": "ERI",
+    "number": "0232"
+  },
+  "0233": {
+    "country": "ESTONIA",
+    "A2": "EE",
+    "A3": "EST",
+    "number": "0233"
+  },
+  "0231": {
+    "country": "ETHIOPIA",
+    "A2": "ET",
+    "A3": "ETH",
+    "number": "0231"
+  },
+  "0238": {
+    "country": "FALKLAND ISLANDS (MALVINAS)",
+    "A2": "FK",
+    "A3": "FLK",
+    "number": "0238"
+  },
+  "0234": {
+    "country": "FAROE ISLANDS",
+    "A2": "FO",
+    "A3": "FRO",
+    "number": "0234"
+  },
+  "0242": {
+    "country": "FIJI",
+    "A2": "FJ",
+    "A3": "FJI",
+    "number": "0242"
+  },
+  "0246": {
+    "country": "FINLAND",
+    "A2": "FI",
+    "A3": "FIN",
+    "number": "0246"
+  },
+  "0250": {
+    "country": "FRANCE",
+    "A2": "FR",
+    "A3": "FRA",
+    "number": "0250"
+  },
+  "0249": {
+    "country": "FRANCE, METROPOLITAN",
+    "A2": "FX",
+    "A3": "FXX",
+    "number": "0249"
+  },
+  "0254": {
+    "country": "FRENCH GUIANA",
+    "A2": "GF",
+    "A3": "GUF",
+    "number": "0254"
+  },
+  "0258": {
+    "country": "FRENCH POLYNESIA",
+    "A2": "PF",
+    "A3": "PYF",
+    "number": "0258"
+  },
+  "0260": {
+    "country": "FRENCH SOUTHERN TERRITORIES",
+    "A2": "TF",
+    "A3": "ATF",
+    "number": "0260"
+  },
+  "0266": {
+    "country": "GABON",
+    "A2": "GA",
+    "A3": "GAB",
+    "number": "0266"
+  },
+  "0270": {
+    "country": "GAMBIA",
+    "A2": "GM",
+    "A3": "GMB",
+    "number": "0270"
+  },
+  "0268": {
+    "country": "GEORGIA",
+    "A2": "GE",
+    "A3": "GEO",
+    "number": "0268"
+  },
+  "0276": {
+    "country": "GERMANY",
+    "A2": "DE",
+    "A3": "DEU",
+    "number": "0276"
+  },
+  "0288": {
+    "country": "GHANA",
+    "A2": "GH",
+    "A3": "GHA",
+    "number": "0288"
+  },
+  "0292": {
+    "country": "GIBRALTAR",
+    "A2": "GI",
+    "A3": "GIB",
+    "number": "0292"
+  },
+  "0300": {
+    "country": "GREECE",
+    "A2": "GR",
+    "A3": "GRC",
+    "number": "0300"
+  },
+  "0304": {
+    "country": "GREENLAND",
+    "A2": "GL",
+    "A3": "GRL",
+    "number": "0304"
+  },
+  "0308": {
+    "country": "GRENADA",
+    "A2": "GD",
+    "A3": "GRD",
+    "number": "0308"
+  },
+  "0312": {
+    "country": "GUADELOUPE",
+    "A2": "GP",
+    "A3": "GLP",
+    "number": "0312"
+  },
+  "0316": {
+    "country": "GUAM",
+    "A2": "GU",
+    "A3": "GUM",
+    "number": "0316"
+  },
+  "0320": {
+    "country": "GUATEMALA",
+    "A2": "GT",
+    "A3": "GTM",
+    "number": "0320"
+  },
+  "0324": {
+    "country": "GUINEA",
+    "A2": "GN",
+    "A3": "GIN",
+    "number": "0324"
+  },
+  "0624": {
+    "country": "GUINEA-BISSAU",
+    "A2": "GW",
+    "A3": "GNB",
+    "number": "0624"
+  },
+  "0328": {
+    "country": "GUYANA",
+    "A2": "GY",
+    "A3": "GUY",
+    "number": "0328"
+  },
+  "0332": {
+    "country": "HAITI",
+    "A2": "HT",
+    "A3": "HTI",
+    "number": "0332"
+  },
+  "0334": {
+    "country": "HEARD AND MC DONALD ISLANDS",
+    "A2": "HM",
+    "A3": "HMD",
+    "number": "0334"
+  },
+  "0336": {
+    "country": "HOLY SEE (VATICAN CITY STATE)",
+    "A2": "VA",
+    "A3": "VAT",
+    "number": "0336"
+  },
+  "0340": {
+    "country": "HONDURAS",
+    "A2": "HN",
+    "A3": "HND",
+    "number": "0340"
+  },
+  "0344": {
+    "country": "HONG KONG",
+    "A2": "HK",
+    "A3": "HKG",
+    "number": "0344"
+  },
+  "0348": {
+    "country": "HUNGARY",
+    "A2": "HU",
+    "A3": "HUN",
+    "number": "0348"
+  },
+  "0352": {
+    "country": "ICELAND",
+    "A2": "IS",
+    "A3": "ISL",
+    "number": "0352"
+  },
+  "0356": {
+    "country": "INDIA",
+    "A2": "IN",
+    "A3": "IND",
+    "number": "0356"
+  },
+  "0360": {
+    "country": "INDONESIA",
+    "A2": "ID",
+    "A3": "IDN",
+    "number": "0360"
+  },
+  "0364": {
+    "country": "IRAN (ISLAMIC REPUBLIC OF)",
+    "A2": "IR",
+    "A3": "IRN",
+    "number": "0364"
+  },
+  "0368": {
+    "country": "IRAQ",
+    "A2": "IQ",
+    "A3": "IRQ",
+    "number": "0368"
+  },
+  "0372": {
+    "country": "IRELAND",
+    "A2": "IE",
+    "A3": "IRL",
+    "number": "0372"
+  },
+  "0376": {
+    "country": "ISRAEL",
+    "A2": "IL",
+    "A3": "ISR",
+    "number": "0376"
+  },
+  "0380": {
+    "country": "ITALY",
+    "A2": "IT",
+    "A3": "ITA",
+    "number": "0380"
+  },
+  "0388": {
+    "country": "JAMAICA",
+    "A2": "JM",
+    "A3": "JAM",
+    "number": "0388"
+  },
+  "0392": {
+    "country": "JAPAN",
+    "A2": "JP",
+    "A3": "JPN",
+    "number": "0392"
+  },
+  "0400": {
+    "country": "JORDAN",
+    "A2": "JO",
+    "A3": "JOR",
+    "number": "0400"
+  },
+  "0398": {
+    "country": "KAZAKHSTAN",
+    "A2": "KZ",
+    "A3": "KAZ",
+    "number": "0398"
+  },
+  "0404": {
+    "country": "KENYA",
+    "A2": "KE",
+    "A3": "KEN",
+    "number": "0404"
+  },
+  "0296": {
+    "country": "KIRIBATI",
+    "A2": "KI",
+    "A3": "KIR",
+    "number": "0296"
+  },
+  "0408": {
+    "country": "KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF",
+    "A2": "KP",
+    "A3": "PRK",
+    "number": "0408"
+  },
+  "0410": {
+    "country": "KOREA, REPUBLIC OF",
+    "A2": "KR",
+    "A3": "KOR",
+    "number": "0410"
+  },
+  "0414": {
+    "country": "KUWAIT",
+    "A2": "KW",
+    "A3": "KWT",
+    "number": "0414"
+  },
+  "0417": {
+    "country": "KYRGYZSTAN",
+    "A2": "KG",
+    "A3": "KGZ",
+    "number": "0417"
+  },
+  "0418": {
+    "country": "LAO PEOPLE'S DEMOCRATIC REPUBLIC",
+    "A2": "LA",
+    "A3": "LAO",
+    "number": "0418"
+  },
+  "0428": {
+    "country": "LATVIA",
+    "A2": "LV",
+    "A3": "LVA",
+    "number": "0428"
+  },
+  "0422": {
+    "country": "LEBANON",
+    "A2": "LB",
+    "A3": "LBN",
+    "number": "0422"
+  },
+  "0426": {
+    "country": "LESOTHO",
+    "A2": "LS",
+    "A3": "LSO",
+    "number": "0426"
+  },
+  "0430": {
+    "country": "LIBERIA",
+    "A2": "LR",
+    "A3": "LBR",
+    "number": "0430"
+  },
+  "0434": {
+    "country": "LIBYAN ARAB JAMAHIRIYA",
+    "A2": "LY",
+    "A3": "LBY",
+    "number": "0434"
+  },
+  "0438": {
+    "country": "LIECHTENSTEIN",
+    "A2": "LI",
+    "A3": "LIE",
+    "number": "0438"
+  },
+  "0440": {
+    "country": "LITHUANIA",
+    "A2": "LT",
+    "A3": "LTU",
+    "number": "0440"
+  },
+  "0442": {
+    "country": "LUXEMBOURG",
+    "A2": "LU",
+    "A3": "LUX",
+    "number": "0442"
+  },
+  "0446": {
+    "country": "MACAU",
+    "A2": "MO",
+    "A3": "MAC",
+    "number": "0446"
+  },
+  "0807": {
+    "country": "MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF",
+    "A2": "MK",
+    "A3": "MKD",
+    "number": "0807"
+  },
+  "0450": {
+    "country": "MADAGASCAR",
+    "A2": "MG",
+    "A3": "MDG",
+    "number": "0450"
+  },
+  "0454": {
+    "country": "MALAWI",
+    "A2": "MW",
+    "A3": "MWI",
+    "number": "0454"
+  },
+  "0458": {
+    "country": "MALAYSIA",
+    "A2": "MY",
+    "A3": "MYS",
+    "number": "0458"
+  },
+  "0462": {
+    "country": "MALDIVES",
+    "A2": "MV",
+    "A3": "MDV",
+    "number": "0462"
+  },
+  "0466": {
+    "country": "MALI",
+    "A2": "ML",
+    "A3": "MLI",
+    "number": "0466"
+  },
+  "0470": {
+    "country": "MALTA",
+    "A2": "MT",
+    "A3": "MLT",
+    "number": "0470"
+  },
+  "0584": {
+    "country": "MARSHALL ISLANDS",
+    "A2": "MH",
+    "A3": "MHL",
+    "number": "0584"
+  },
+  "0474": {
+    "country": "MARTINIQUE",
+    "A2": "MQ",
+    "A3": "MTQ",
+    "number": "0474"
+  },
+  "0478": {
+    "country": "MAURITANIA",
+    "A2": "MR",
+    "A3": "MRT",
+    "number": "0478"
+  },
+  "0480": {
+    "country": "MAURITIUS",
+    "A2": "MU",
+    "A3": "MUS",
+    "number": "0480"
+  },
+  "0175": {
+    "country": "MAYOTTE",
+    "A2": "YT",
+    "A3": "MYT",
+    "number": "0175"
+  },
+  "0484": {
+    "country": "MEXICO",
+    "A2": "MX",
+    "A3": "MEX",
+    "number": "0484"
+  },
+  "0583": {
+    "country": "MICRONESIA, FEDERATED STATES OF",
+    "A2": "FM",
+    "A3": "FSM",
+    "number": "0583"
+  },
+  "0498": {
+    "country": "MOLDOVA, REPUBLIC OF",
+    "A2": "MD",
+    "A3": "MDA",
+    "number": "0498"
+  },
+  "0492": {
+    "country": "MONACO",
+    "A2": "MC",
+    "A3": "MCO",
+    "number": "0492"
+  },
+  "0496": {
+    "country": "MONGOLIA",
+    "A2": "MN",
+    "A3": "MNG",
+    "number": "0496"
+  },
+  "0500": {
+    "country": "MONTSERRAT",
+    "A2": "MS",
+    "A3": "MSR",
+    "number": "0500"
+  },
+  "0504": {
+    "country": "MOROCCO",
+    "A2": "MA",
+    "A3": "MAR",
+    "number": "0504"
+  },
+  "0508": {
+    "country": "MOZAMBIQUE",
+    "A2": "MZ",
+    "A3": "MOZ",
+    "number": "0508"
+  },
+  "0104": {
+    "country": "MYANMAR",
+    "A2": "MM",
+    "A3": "MMR",
+    "number": "0104"
+  },
+  "0516": {
+    "country": "NAMIBIA",
+    "A2": "NA",
+    "A3": "NAM",
+    "number": "0516"
+  },
+  "0520": {
+    "country": "NAURU",
+    "A2": "NR",
+    "A3": "NRU",
+    "number": "0520"
+  },
+  "0524": {
+    "country": "NEPAL",
+    "A2": "NP",
+    "A3": "NPL",
+    "number": "0524"
+  },
+  "0528": {
+    "country": "NETHERLANDS",
+    "A2": "NL",
+    "A3": "NLD",
+    "number": "0528"
+  },
+  "0530": {
+    "country": "NETHERLANDS ANTILLES",
+    "A2": "AN",
+    "A3": "ANT",
+    "number": "0530"
+  },
+  "0540": {
+    "country": "NEW CALEDONIA",
+    "A2": "NC",
+    "A3": "NCL",
+    "number": "0540"
+  },
+  "0554": {
+    "country": "NEW ZEALAND",
+    "A2": "NZ",
+    "A3": "NZL",
+    "number": "0554"
+  },
+  "0558": {
+    "country": "NICARAGUA",
+    "A2": "NI",
+    "A3": "NIC",
+    "number": "0558"
+  },
+  "0562": {
+    "country": "NIGER",
+    "A2": "NE",
+    "A3": "NER",
+    "number": "0562"
+  },
+  "0566": {
+    "country": "NIGERIA",
+    "A2": "NG",
+    "A3": "NGA",
+    "number": "0566"
+  },
+  "0570": {
+    "country": "NIUE",
+    "A2": "NU",
+    "A3": "NIU",
+    "number": "0570"
+  },
+  "0574": {
+    "country": "NORFOLK ISLAND",
+    "A2": "NF",
+    "A3": "NFK",
+    "number": "0574"
+  },
+  "0580": {
+    "country": "NORTHERN MARIANA ISLANDS",
+    "A2": "MP",
+    "A3": "MNP",
+    "number": "0580"
+  },
+  "0578": {
+    "country": "NORWAY",
+    "A2": "NO",
+    "A3": "NOR",
+    "number": "0578"
+  },
+  "0512": {
+    "country": "OMAN",
+    "A2": "OM",
+    "A3": "OMN",
+    "number": "0512"
+  },
+  "0586": {
+    "country": "PAKISTAN",
+    "A2": "PK",
+    "A3": "PAK",
+    "number": "0586"
+  },
+  "0585": {
+    "country": "PALAU",
+    "A2": "PW",
+    "A3": "PLW",
+    "number": "0585"
+  },
+  "0591": {
+    "country": "PANAMA",
+    "A2": "PA",
+    "A3": "PAN",
+    "number": "0591"
+  },
+  "0598": {
+    "country": "PAPUA NEW GUINEA",
+    "A2": "PG",
+    "A3": "PNG",
+    "number": "0598"
+  },
+  "0600": {
+    "country": "PARAGUAY",
+    "A2": "PY",
+    "A3": "PRY",
+    "number": "0600"
+  },
+  "0604": {
+    "country": "PERU",
+    "A2": "PE",
+    "A3": "PER",
+    "number": "0604"
+  },
+  "0608": {
+    "country": "PHILIPPINES",
+    "A2": "PH",
+    "A3": "PHL",
+    "number": "0608"
+  },
+  "0612": {
+    "country": "PITCAIRN",
+    "A2": "PN",
+    "A3": "PCN",
+    "number": "0612"
+  },
+  "0616": {
+    "country": "POLAND",
+    "A2": "PL",
+    "A3": "POL",
+    "number": "0616"
+  },
+  "0620": {
+    "country": "PORTUGAL",
+    "A2": "PT",
+    "A3": "PRT",
+    "number": "0620"
+  },
+  "0630": {
+    "country": "PUERTO RICO",
+    "A2": "PR",
+    "A3": "PRI",
+    "number": "0630"
+  },
+  "0634": {
+    "country": "QATAR",
+    "A2": "QA",
+    "A3": "QAT",
+    "number": "0634"
+  },
+  "0638": {
+    "country": "REUNION",
+    "A2": "RE",
+    "A3": "REU",
+    "number": "0638"
+  },
+  "0642": {
+    "country": "ROMANIA",
+    "A2": "RO",
+    "A3": "ROM",
+    "number": "0642"
+  },
+  "0643": {
+    "country": "RUSSIAN FEDERATION",
+    "A2": "RU",
+    "A3": "RUS",
+    "number": "0643"
+  },
+  "0646": {
+    "country": "RWANDA",
+    "A2": "RW",
+    "A3": "RWA",
+    "number": "0646"
+  },
+  "0659": {
+    "country": "SAINT KITTS AND NEVIS",
+    "A2": "KN",
+    "A3": "KNA",
+    "number": "0659"
+  },
+  "0662": {
+    "country": "SAINT LUCIA",
+    "A2": "LC",
+    "A3": "LCA",
+    "number": "0662"
+  },
+  "0670": {
+    "country": "SAINT VINCENT AND THE GRENADINES",
+    "A2": "VC",
+    "A3": "VCT",
+    "number": "0670"
+  },
+  "0882": {
+    "country": "SAMOA",
+    "A2": "WS",
+    "A3": "WSM",
+    "number": "0882"
+  },
+  "0674": {
+    "country": "SAN MARINO",
+    "A2": "SM",
+    "A3": "SMR",
+    "number": "0674"
+  },
+  "0678": {
+    "country": "SAO TOME AND PRINCIPE",
+    "A2": "ST",
+    "A3": "STP",
+    "number": "0678"
+  },
+  "0682": {
+    "country": "SAUDI ARABIA",
+    "A2": "SA",
+    "A3": "SAU",
+    "number": "0682"
+  },
+  "0686": {
+    "country": "SENEGAL",
+    "A2": "SN",
+    "A3": "SEN",
+    "number": "0686"
+  },
+  "0690": {
+    "country": "SEYCHELLES",
+    "A2": "SC",
+    "A3": "SYC",
+    "number": "0690"
+  },
+  "0694": {
+    "country": "SIERRA LEONE",
+    "A2": "SL",
+    "A3": "SLE",
+    "number": "0694"
+  },
+  "0702": {
+    "country": "SINGAPORE",
+    "A2": "SG",
+    "A3": "SGP",
+    "number": "0702"
+  },
+  "0703": {
+    "country": "SLOVAKIA (Slovak Republic)",
+    "A2": "SK",
+    "A3": "SVK",
+    "number": "0703"
+  },
+  "0705": {
+    "country": "SLOVENIA",
+    "A2": "SI",
+    "A3": "SVN",
+    "number": "0705"
+  },
+  "0090": {
+    "country": "SOLOMON ISLANDS",
+    "A2": "SB",
+    "A3": "SLB",
+    "number": "0090"
+  },
+  "0706": {
+    "country": "SOMALIA",
+    "A2": "SO",
+    "A3": "SOM",
+    "number": "0706"
+  },
+  "0710": {
+    "country": "SOUTH AFRICA",
+    "A2": "ZA",
+    "A3": "ZAF",
+    "number": "0710"
+  },
+  "0239": {
+    "country": "SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS",
+    "A2": "GS",
+    "A3": "SGS",
+    "number": "0239"
+  },
+  "0724": {
+    "country": "SPAIN",
+    "A2": "ES",
+    "A3": "ESP",
+    "number": "0724"
+  },
+  "0144": {
+    "country": "SRI LANKA",
+    "A2": "LK",
+    "A3": "LKA",
+    "number": "0144"
+  },
+  "0654": {
+    "country": "ST. HELENA",
+    "A2": "SH",
+    "A3": "SHN",
+    "number": "0654"
+  },
+  "0666": {
+    "country": "ST. PIERRE AND MIQUELON",
+    "A2": "PM",
+    "A3": "SPM",
+    "number": "0666"
+  },
+  "0736": {
+    "country": "SUDAN",
+    "A2": "SD",
+    "A3": "SDN",
+    "number": "0736"
+  },
+  "0740": {
+    "country": "SURINAME",
+    "A2": "SR",
+    "A3": "SUR",
+    "number": "0740"
+  },
+  "0744": {
+    "country": "SVALBARD AND JAN MAYEN ISLANDS",
+    "A2": "SJ",
+    "A3": "SJM",
+    "number": "0744"
+  },
+  "0748": {
+    "country": "SWAZILAND",
+    "A2": "SZ",
+    "A3": "SWZ",
+    "number": "0748"
+  },
+  "0752": {
+    "country": "SWEDEN",
+    "A2": "SE",
+    "A3": "SWE",
+    "number": "0752"
+  },
+  "0756": {
+    "country": "SWITZERLAND",
+    "A2": "CH",
+    "A3": "CHE",
+    "number": "0756"
+  },
+  "0760": {
+    "country": "SYRIAN ARAB REPUBLIC",
+    "A2": "SY",
+    "A3": "SYR",
+    "number": "0760"
+  },
+  "0158": {
+    "country": "TAIWAN, PROVINCE OF CHINA",
+    "A2": "TW",
+    "A3": "TWN",
+    "number": "0158"
+  },
+  "0762": {
+    "country": "TAJIKISTAN",
+    "A2": "TJ",
+    "A3": "TJK",
+    "number": "0762"
+  },
+  "0834": {
+    "country": "TANZANIA, UNITED REPUBLIC OF",
+    "A2": "TZ",
+    "A3": "TZA",
+    "number": "0834"
+  },
+  "0764": {
+    "country": "THAILAND",
+    "A2": "TH",
+    "A3": "THA",
+    "number": "0764"
+  },
+  "0768": {
+    "country": "TOGO",
+    "A2": "TG",
+    "A3": "TGO",
+    "number": "0768"
+  },
+  "0772": {
+    "country": "TOKELAU",
+    "A2": "TK",
+    "A3": "TKL",
+    "number": "0772"
+  },
+  "0776": {
+    "country": "TONGA",
+    "A2": "TO",
+    "A3": "TON",
+    "number": "0776"
+  },
+  "0780": {
+    "country": "TRINIDAD AND TOBAGO",
+    "A2": "TT",
+    "A3": "TTO",
+    "number": "0780"
+  },
+  "0788": {
+    "country": "TUNISIA",
+    "A2": "TN",
+    "A3": "TUN",
+    "number": "0788"
+  },
+  "0792": {
+    "country": "TURKEY",
+    "A2": "TR",
+    "A3": "TUR",
+    "number": "0792"
+  },
+  "0795": {
+    "country": "TURKMENISTAN",
+    "A2": "TM",
+    "A3": "TKM",
+    "number": "0795"
+  },
+  "0796": {
+    "country": "TURKS AND CAICOS ISLANDS",
+    "A2": "TC",
+    "A3": "TCA",
+    "number": "0796"
+  },
+  "0798": {
+    "country": "TUVALU",
+    "A2": "TV",
+    "A3": "TUV",
+    "number": "0798"
+  },
+  "0800": {
+    "country": "UGANDA",
+    "A2": "UG",
+    "A3": "UGA",
+    "number": "0800"
+  },
+  "0804": {
+    "country": "UKRAINE",
+    "A2": "UA",
+    "A3": "UKR",
+    "number": "0804"
+  },
+  "0784": {
+    "country": "UNITED ARAB EMIRATES",
+    "A2": "AE",
+    "A3": "ARE",
+    "number": "0784"
+  },
+  "0826": {
+    "country": "UNITED KINGDOM",
+    "A2": "GB",
+    "A3": "GBR",
+    "number": "0826"
+  },
+  "0840": {
+    "country": "UNITED STATES",
+    "A2": "US",
+    "A3": "USA",
+    "number": "0840"
+  },
+  "0581": {
+    "country": "UNITED STATES MINOR OUTLYING ISLANDS",
+    "A2": "UM",
+    "A3": "UMI",
+    "number": "0581"
+  },
+  "0858": {
+    "country": "URUGUAY",
+    "A2": "UY",
+    "A3": "URY",
+    "number": "0858"
+  },
+  "0860": {
+    "country": "UZBEKISTAN",
+    "A2": "UZ",
+    "A3": "UZB",
+    "number": "0860"
+  },
+  "0548": {
+    "country": "VANUATU",
+    "A2": "VU",
+    "A3": "VUT",
+    "number": "0548"
+  },
+  "0862": {
+    "country": "VENEZUELA",
+    "A2": "VE",
+    "A3": "VEN",
+    "number": "0862"
+  },
+  "0704": {
+    "country": "VIET NAM",
+    "A2": "VN",
+    "A3": "VNM",
+    "number": "0704"
+  },
+  "0092": {
+    "country": "VIRGIN ISLANDS (BRITISH)",
+    "A2": "VG",
+    "A3": "VGB",
+    "number": "0092"
+  },
+  "0850": {
+    "country": "VIRGIN ISLANDS (U.S.)",
+    "A2": "VI",
+    "A3": "VIR",
+    "number": "0850"
+  },
+  "0876": {
+    "country": "WALLIS AND FUTUNA ISLANDS",
+    "A2": "WF",
+    "A3": "WLF",
+    "number": "0876"
+  },
+  "0732": {
+    "country": "WESTERN SAHARA",
+    "A2": "EH",
+    "A3": "ESH",
+    "number": "0732"
+  },
+  "0887": {
+    "country": "YEMEN",
+    "A2": "YE",
+    "A3": "YEM",
+    "number": "0887"
+  },
+  "0891": {
+    "country": "YUGOSLAVIA",
+    "A2": "YU",
+    "A3": "YUG",
+    "number": "0891"
+  },
+  "0894": {
+    "country": "ZAMBIA",
+    "A2": "ZM",
+    "A3": "ZMB",
+    "number": "0894"
+  },
+  "0716": {
+    "country": "ZIMBABWE",
+    "A2": "ZW",
+    "A3": "ZWE",
+    "number": "0716"
+  }
+}

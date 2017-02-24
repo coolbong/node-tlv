@@ -35,7 +35,12 @@ function main() {
 
 
     dataElement.forEach(function (tlv){
-        tlv.print();
+        try {
+            tlv.print();
+        } catch (e) {
+            console.log(e);
+        }
+
         console.log('');
     });
 
