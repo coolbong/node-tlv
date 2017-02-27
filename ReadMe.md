@@ -4,6 +4,8 @@ node base tlv parser
 
 [![NPM](https://nodei.co/npm/node-tlv.png)](https://nodei.co/npm/node-tlv/)
 
+[![Build Status](https://travis-ci.org/coolbong/node-tlv.svg?branch=master)](https://travis-ci.org/coolbong/node-tlv)
+
 
 ## Example
 	var TLV = require('node-tlv');
