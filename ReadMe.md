@@ -44,3 +44,10 @@ node base tlv parser
 You can install the latest tag via npm:
 
 	npm install node-tlv
+
+
+##Use
+node-tlv-parser 
+
+1. [Github](https://github.com/coolbong/node-tlv-parser/)
+2. [Heroku](https://node-tlv-parser.herokuapp.com)
