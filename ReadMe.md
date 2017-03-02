@@ -3,6 +3,8 @@
 node base tlv parser
 
 [![NPM](https://nodei.co/npm/node-tlv.png)](https://nodei.co/npm/node-tlv/)
+[![npm version](https://img.shields.io/npm/v/node-tlv.svg?style=flat)](https://www.npmjs.com/package/node-tlv)
+[![Build Status](https://travis-ci.org/coolbong/node-tlv.svg?branch=master)](https://travis-ci.org/coolbong/node-tlv)
 
 
 ## Example
