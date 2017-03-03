@@ -32,19 +32,10 @@ function main() {
         var children = tlv.getChild();
         // concatenate array
         dataElement = dataElement.concat(children);
-    });
-
-
-    dataElement.forEach(function (tlv){
-        try {
-            tlv.print();
-        } catch (e) {
-            console.log(e);
-        }
-
+        console.log(tlv.toString());
+        tlv.print();
         console.log('');
     });
-
 }
 
 main();
