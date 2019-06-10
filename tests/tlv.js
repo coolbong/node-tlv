@@ -228,6 +228,21 @@ exports.tlv = {
         tlv = new TLV(0x12, data, TLV.DGI);
         assert(tlv.encodingMode == TLV.DGI);
         assert(tlv.size == 9);
+    },
+    'find example': function() {
+        tlv = TLV.parse('E31E4F06A000000025019F7001018407A00000002501018407A0000000250102')
+
+        tlv_4f = tlv.find('4F')
+        console.log(tlv_4f.toString())
+        assert(tlv_4f.toString() == '4F06A00000002501')
+
+        tlv_9F70 = tlv.find('9F70');
+        assert(tlv_9F70.toString() == '9F700101')
+
+        arr_84 = tlv.findAll('84');
+        assert(arr_84.length === 2)
+        assert(arr_84[0].getValue() === 'A0000000250101')
+        assert(arr_84[1].getValue() === 'A0000000250102')
         
 
     },

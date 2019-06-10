@@ -1,10 +1,16 @@
 {
   "name": "node-tlv",
-  "version": "1.5.7",
+  "version": "1.5.8",
   "description": "node tlv parser",
   "main": "./lib/TLV.js",
   "keywords": [
-    "TLV", "DGI", "Ber-TLV", "EMV", "ISO7816", "SIMPLE-TLV", "DOL"
+    "TLV",
+    "DGI",
+    "Ber-TLV",
+    "EMV",
+    "ISO7816",
+    "SIMPLE-TLV",
+    "DOL"
   ],
   "author": {
     "name": "coolbong",
