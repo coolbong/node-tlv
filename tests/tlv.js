@@ -220,7 +220,7 @@ exports.tlv = {
         //}
 
 
-        data = new Buffer('561000', 'ascii');
+        data = Buffer.from('561000', 'ascii');
         tlv = new TLV(0x1201, data, TLV.DGI);
         assert(tlv.encodingMode == TLV.DGI);
         assert(tlv.size == 9);
@@ -323,7 +323,7 @@ exports.tlv = {
         tlv = new TLV(0x06, '2A1234', TLV.EMV);
         assert(tlv.getTLV() == "06032A1234");
 
-        data = new Buffer('561000', 'ascii');
+        data = Buffer.from('561000', 'ascii');
         tlv = new TLV(0x1201, data, TLV.DGI);
         assert(tlv.getTLV() == "120106353631303030");
 
@@ -354,8 +354,7 @@ exports.tlv = {
         assert(tlv.getLength() == 2);
         assert(tlv.getSize() == 4);
 
-        var buf = new Buffer(128);
-        buf.fill(0x00);
+        var buf = Buffer.alloc(128);
         tlv = new TLV(0x77, buf);
 
         assert(tlv.getLength() == 128);

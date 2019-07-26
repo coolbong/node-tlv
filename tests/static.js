@@ -25,7 +25,7 @@ exports.static = {
             assert(tag === '9F1A')
         },
         'buffer tag': function() {
-            var buf = new Buffer('DF8120', 'hex');
+            var buf = Buffer.from('DF8120', 'hex');
             var tag = TLV.adjustTag(buf);
             assert (tag === 'DF8120');
         },
@@ -45,23 +45,17 @@ exports.static = {
             assert(ret === 'C0');
         },
         'adjustTag #4 buffer #1' : function() {
-            var buf = new Buffer(1);
-            buf[0] = 0x82;
+            var buf = Buffer.from([0x82]);
             var ret = TLV.adjustTag(buf);
             assert(ret === '82');
         },
         'adjustTag #5 buffer #2' : function() {
-            var buf = new Buffer(2);
-            buf[0] = 0xDF;
-            buf[1] = 0x30;
+            var buf = Buffer.from([0xDF, 0x30]);
             var ret = TLV.adjustTag(buf);
             assert(ret === 'DF30');
         },
         'adjustTag #6 buffer zero padding tag' : function() {
-            var buf = new Buffer(3);
-            buf[0] = 0x00;
-            buf[1] = 0xDF;
-            buf[2] = 0x30;
+            var buf = Buffer.from([0x00, 0xDF, 0x30])
             var ret = TLV.adjustTag(buf);
             assert(ret === 'DF30');
         }

@@ -16,7 +16,7 @@ exports.dol = {
         dol.list.forEach(function(tl) {
             var tag = tl.getTag();
             var len = tl.getLength();
-            var value = new Buffer(len);
+            var value = Buffer.alloc(len);
             if (tag == '9F5C') {
                 value.fill(0x00);
             } else if (tag == '9F40') {
