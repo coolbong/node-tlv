@@ -402,4 +402,16 @@ exports.tlv = {
         },
     },
 
+
+    // simple tlv parse test
+    'simple tlv parse': {
+        'parse 1' : function() {
+            // test tlv
+            // valid application currency code (EURO)
+            tlv = TLV.parse('9F42020978')
+            // invalid application currency code (Unknown)
+            tlv = TLV.parse('9F42020101')
+        }
+    },
+
 };
