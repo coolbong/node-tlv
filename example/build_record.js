@@ -33,4 +33,4 @@ const dir_entry = new TLV('61', adf_name + app_priority + app_label + app_pref_n
 // step 3 build read record response message template
 const record_template = new TLV('70', dir_entry.getTLV());
 
-assert(record_template.toString() === '702861264F07A0000000041010870101500A4D4153544552434152449F120B43495449204D4153544552')
+assert(record_template.toString() === '702861264F07A0000000041010870101500A4D4153544552434152449F120B43495449204D4153544552');

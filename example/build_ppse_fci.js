@@ -2,7 +2,7 @@
 // EMV Contactless Book B Entry Point Specification 
 // Table 3-2: SELECT Response Message Data Field (FCI) of the PPSE
 //'6F' FCI Template M
-//    '84' DF Name (‘2PAY.SYS.DDF01’) O
+//    '84' DF Name ('2PAY.SYS.DDF01') O
 //    'A5' FCI Proprietary Template M
 //        'BF0C' FCI Issuer Discretionary Data M
 //        '61' Directory Entry M
@@ -39,4 +39,4 @@ const fci_proprietary_template = new TLV('A5', issuer_discretionary_data.getTLV(
 // step 5 build FCI template '6F'
 const fci_template = new TLV('6F',  df_name.getTLV() + fci_proprietary_template.getTLV());
 
-assert(fci_template.getTLV() === '6F2C840E325041592E5359532E4444463031A51ABF0C1761154F07A0000000031010500A56495341435245444954')
+assert(fci_template.getTLV() === '6F2C840E325041592E5359532E4444463031A51ABF0C1761154F07A0000000031010500A56495341435245444954');
