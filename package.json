@@ -1,6 +1,6 @@
 {
   "name": "node-tlv",
-  "version": "1.5.12",
+  "version": "1.5.12.1",
   "description": "node tlv parser",
   "main": "./lib/TLV.js",
   "keywords": [
