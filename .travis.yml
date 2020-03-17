@@ -3,4 +3,4 @@
    - "node"
    - "6"
 before_install:
-  - npm install mocha -g
+  - npm install  -g mocha@6.0.0
