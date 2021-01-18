@@ -9,7 +9,7 @@ node base tlv parser
 
 ## Example for parse GPO response
 
-    ```javascript
+```javascript
     const TLV = require('node-tlv');
     const assert = require('assert');
 
@@ -40,10 +40,10 @@ node base tlv parser
     assert(afl.getTag() === '94');
     assert(afl.getLength() === 0x08);
     assert(afl.getValue() === '0801010010010301');
-    ```
+```
 
 ## Exmaple for build PPSE FCI
-    ```javascript
+```javascript
     // EMV Contactless Book B Entry Point Specification 
     // Table 3-2: SELECT Response Message Data Field (FCI) of the PPSE
     //'6F' FCI Template M
@@ -84,10 +84,10 @@ node base tlv parser
     // step 5 build FCI template '6F'
     const fci_template = new TLV('6F',  df_name.getTLV() + fci_proprietary_template.getTLV());
     assert(fci_template.getTLV() === '6F2C840E325041592E5359532E4444463031A51ABF0C1761154F07A0000000031010500A56495341435245444954');
-    ```
+```
 
 ## Exmaple for build PSE record
-    ```javascript
+```javascript
     // EMV 4.3 Book 1
     // Table 46: Payment System Directory Record Format
     // Tag '70'  | Data Length (L) | Tag '61' | Length | Directory entry 1 (ADF)
@@ -122,7 +122,7 @@ node base tlv parser
     const record_template = new TLV('70', dir_entry.getTLV());
     
 	assert(record_template.toString() === '702861264F07A0000000041010870101500A4D4153544552434152449F120B43495449204D4153544552');
-	```
+```
 
 ## Installation
 You can install the latest tag via npm:
