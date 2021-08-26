@@ -7,6 +7,28 @@ node base tlv parser
 [![Build Status](https://travis-ci.org/coolbong/node-tlv.svg?branch=master)](https://travis-ci.org/coolbong/node-tlv)
 
 
+## Example for parse FCI
+
+```javascript
+
+    const TLV = require('node-tlv');
+    const assert = require('assert');
+    // 6F20840E315041592E5359532E4444463031A50E8801015F2D046B6F656E9F110101
+
+    const resp = '6F20840E315041592E5359532E4444463031A50E8801015F2D046B6F656E9F110101';
+    const tlv = TLV.parse(resp);
+
+    assert(tlv.getTag() === '6F');
+    assert(tlv.getLength() === 0x20);
+    
+
+    const df_name = tlv.find('84')
+    const fci_prop_template = tlv.find('A5')
+    
+
+```
+
+
 ## Example for parse GPO response
 
 ```javascript
@@ -29,7 +51,7 @@ node base tlv parser
     const first = child[0];
     assert(first.getTag() === '82');
 
-    // find API
+    // find AIP
     const aip = tlv.find(0x82);
     assert(aip.getTag() === '82');
     assert(aip.getLength() === 2);
@@ -40,6 +62,36 @@ node base tlv parser
     assert(afl.getTag() === '94');
     assert(afl.getLength() === 0x08);
     assert(afl.getValue() === '0801010010010301');
+
+```
+
+## Example for parse PSE Record
+
+```javascript
+    const TLV = require('node-tlv');
+    const assert = require('assert');
+
+    const resp = '702961134F08A0000000250104025004414D455887010161124F07A00000002910105004414D4558870102'
+    const tlv = TLV.parse(resp);
+
+    // find multiple tags
+    const directory_enties = tlv.findAll('61')
+    assert(directory_enties.length() === 2);
+
+    const directory_entry_1 = directory_enties[0];
+    var adf_name = directory_entry_1.find('4f');
+
+    assert(adf_name.getTag() === '4F');
+    assert(adf_name.getLength() > 5);
+    assert(adf_name.getLength() < 16);
+
+    var application_label = directory_entry_1.find('50');
+    
+    assert(application_label.getTag() === '50');
+    assert(application_label.getLength() > 1);
+    assert(application_label.getLength() < 16);
+    
+
 ```
 
 ## Exmaple for build PPSE FCI
