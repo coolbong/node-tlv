@@ -21,10 +21,12 @@ node base tlv parser
     assert(tlv.getTag() === '6F');
     assert(tlv.getLength() === 0x20);
     
-
+    // find dedicated file name 
     const df_name = tlv.find('84')
+
+    // find FCI Proprietary Template 
     const fci_prop_template = tlv.find('A5')
-    
+
 
 ```
 
