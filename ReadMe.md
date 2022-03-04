@@ -127,10 +127,10 @@ node base tlv parser
     const app_label = new TLV('50', '56495341435245444954'); // VISACREDIT
     
     // step 2 build directory entry '61'
-    const dir_encty = new TLV('61', adf_name.getTLV()+app_label.getTLV());
+    const dir_entry = new TLV('61', adf_name.getTLV()+app_label.getTLV());
     
     // step 3 build FCI Issuer Discretionary data ' BF0C'
-    const issuer_discretionary_data = new TLV('BF0C', dir_encty.getTLV());
+    const issuer_discretionary_data = new TLV('BF0C', dir_entry.getTLV());
 
     // step 4 build FCI Proprietary Template 'A5'
     const fci_proprietary_template = new TLV('A5', issuer_discretionary_data.getTLV());
