@@ -67,6 +67,94 @@ exports.dol = {
         assert(tlv.getTag() == '9F40');
         assert(tlv.getLength() == 5);
         assert(tlv.getValue() == '1122334455');
+    },
+    'dol to tlvs 01': function() {
+        var dol = DOL.parse('5F2A02');
+        var list = dol.setValue('0410');
+
+        var tlv = list[0];
+        assert(tlv instanceof TLV);
+        assert(tlv.getTag() == '5F2A');
+        assert(tlv.getLength() == 2);
+        assert(tlv.getValue() == '0410');
+    },
+
+    'dol to tlvs 02': function() {
+        var dol = DOL.parse('9F02069F03069F1A0295055F2A029A039C019F37049F35019F34039B02');
+        var list = dol.setValue('000000001500000000000000041080E00000000410210713004716809B221F00024800');
+
+        // list.forEach(function(tlv) {
+        //     assert(tlv instanceof TLV);
+        //     //assert(tlv.getTag() == '5F2A');
+        //     //assert(tlv.getLength() == 2);
+        //     //assert(tlv.getValue() == '0410');
+        //     tlv.print();
+        // });
+        var tlv = list[0];
+        assert(tlv instanceof TLV);
+        assert(tlv.getTag() == '9F02');
+        assert(tlv.getLength() == 6);
+        assert(tlv.getValue() == '000000001500');
+
+        tlv = list[1];
+        assert(tlv instanceof TLV);
+        assert(tlv.getTag() == '9F03');
+        assert(tlv.getLength() == 6);
+        assert(tlv.getValue() == '000000000000');
+
+        tlv = list[2];
+        assert(tlv instanceof TLV);
+        assert(tlv.getTag() == '9F1A');
+        assert(tlv.getLength() == 2);
+        assert(tlv.getValue() == '0410');
+
+        tlv = list[3];
+        assert(tlv instanceof TLV);
+        assert(tlv.getTag() == '95');
+        assert(tlv.getLength() == 5);
+        assert(tlv.getValue() == '80E0000000');
+
+        tlv = list[4];
+        assert(tlv instanceof TLV);
+        assert(tlv.getTag() == '5F2A');
+        assert(tlv.getLength() == 2);
+        assert(tlv.getValue() == '0410');
+
+        tlv = list[5];
+        assert(tlv instanceof TLV);
+        assert(tlv.getTag() == '9A');
+        assert(tlv.getLength() == 3);
+        assert(tlv.getValue() == '210713');
+
+        tlv = list[6];
+        assert(tlv instanceof TLV);
+        assert(tlv.getTag() == '9C');
+        assert(tlv.getLength() == 1);
+        assert(tlv.getValue() == '00');
+
+        tlv = list[7];
+        assert(tlv instanceof TLV);
+        assert(tlv.getTag() == '9F37');
+        assert(tlv.getLength() == 4);
+        assert(tlv.getValue() == '4716809B');
+
+        tlv = list[8];
+        assert(tlv instanceof TLV);
+        assert(tlv.getTag() == '9F35');
+        assert(tlv.getLength() == 1);
+        assert(tlv.getValue() == '22');
+
+        tlv = list[9];
+        assert(tlv instanceof TLV);
+        assert(tlv.getTag() == '9F34');
+        assert(tlv.getLength() == 3);
+        assert(tlv.getValue() == '1F0002');
+
+        tlv = list[10];
+        assert(tlv instanceof TLV);
+        assert(tlv.getTag() == '9B');
+        assert(tlv.getLength() == 2);
+        assert(tlv.getValue() == '4800');
     }
 
 };
