@@ -411,7 +411,18 @@ exports.tlv = {
             tlv = TLV.parse('9F42020978')
             // invalid application currency code (Unknown)
             tlv = TLV.parse('9F42020101')
+        },
+        'parse 2' : function() {
+            // test tlv (Transaction Status Information: 9B)
+            tlv = TLV.parse('9B024800')
+            assert(tlv instanceof TLV);
+            assert(tlv.getTag() == '9B');
+            assert(tlv.getLength() == 2);
+            assert(tlv.getValue() == '4800');
+
+            tlv.print()
         }
+
     },
 
 };
