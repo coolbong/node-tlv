@@ -425,4 +425,9 @@ exports.tlv = {
 
     },
 
+	update: function () {
+		const tlv = TLV.update("6F1A840E315041592E5359532E4444463031A5088801025F2D02656E", "88", "09", 0);
+		assert(tlv == "6F1A840E315041592E5359532E4444463031A5088801095F2D02656E");
+	},
+
 };
