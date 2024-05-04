@@ -1,6 +1,6 @@
 {
 	"name": "node-tlv-upgraded",
-	"version": "2.0.0",
+	"version": "2.2.0",
 	"description": "node tlv parser",
 	"main": "./lib/TLV.js",
 	"keywords": [
@@ -20,6 +20,10 @@
 		{
 			"name": "kugesh",
 			"email": "kumaran.kugesh@gmail.com"
+		},
+		{
+			"name": "coolbong",
+			"email": "coolbong.works@gmail.com"
 		}
 	],
 	"devDependencies": {
@@ -28,7 +32,7 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "http://github.com/coolbong/node-tlv"
+		"url": "https://github.com/kugesh-Rajasekaran/node-tlv"
 	},
 	"scripts": {
 		"test": "mocha -u exports ./tests"

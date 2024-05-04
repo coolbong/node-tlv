@@ -26,6 +26,22 @@ const df_name = tlv.find("84");
 const fci_prop_template = tlv.find("A5");
 ```
 
+## Example for update a tag
+
+```javascript
+const TLV = require("node-tlv");
+const assert = require("assert");
+// 6F20840E315041592E5359532E4444463031A50E8801015F2D046B6F656E9F110101
+
+const resp = "6F20840E315041592E5359532E4444463031A50E8801015F2D046B6F656E9F110101";
+const tlv = TLV.update(
+	"6F3A8407A0000000041010A52F500A4D6173746572436172649F38069F5C089F4005BF0C179F5E095413339000001513019F5D030101009F4D020B0A",
+	"9F5D",
+	"999999"
+);
+assert(tlv.value === "999999");
+```
+
 ## Example for parse GPO response
 
 ```javascript
