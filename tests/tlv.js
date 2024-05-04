@@ -462,7 +462,7 @@ exports.tlv = {
 
 	update: {
 		"update 1": function () {
-			const tlv = TLV.parse("6F1A840E315041592E5359532E4444463031A5088801025F2D02656E");
+			const tlv = TLV.update("6F1A840E315041592E5359532E4444463031A5088801025F2D02656E", "88", "09");
 			assert(tlv == "6F1A840E315041592E5359532E4444463031A5088801095F2D02656E");
 		},
 		"update 2": function () {
@@ -471,6 +471,7 @@ exports.tlv = {
 				"9F5D",
 				"999999"
 			);
+			console.log(TLV.parse(tlv).find("9F5D"));
 			assert(tlv.value === "999999");
 		},
 	},
