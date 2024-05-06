@@ -1,6 +1,9 @@
 # node-tlv
 
-This package is based on node-tlv with some additional features like update
+This package is forked from node-tlv with some additional features including:
+
+    1. Update a given tag with given value
+    2. Add a TLV under a given tag
 
 You can find the npm package here: https://www.npmjs.com/package/node-tlv-upgraded
 
@@ -26,6 +29,16 @@ const df_name = tlv.find("84");
 
 // find FCI Proprietary Template
 const fci_prop_template = tlv.find("A5");
+```
+
+## Example for add a tag
+
+```javascript
+const TLV = require("node-tlv");
+const assert = require("assert");
+
+const tlv = TLV.add("6F1A840E315041592E5359532E4444463031A5088801025F2D02656E", "A5", { tagToAdd: "99", valueToAdd: "99" });
+assert(tlv == "6F1D840E315041592E5359532E4444463031A50B9901998801025F2D02656E");
 ```
 
 ## Example for update a tag
